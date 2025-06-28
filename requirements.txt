@@ -1,0 +1,8 @@
+streamlit
+pandas
+groq
+python-dotenv
+plotly
+numpy
+matplotlib
+seaborn
