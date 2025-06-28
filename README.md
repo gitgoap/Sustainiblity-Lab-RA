@@ -13,7 +13,7 @@ Name: **Aman Prakash**
 
 ## 1.  **Assignment Work:**
  - Cleaned the dataset as instructed, used `Groq` API and custom prompt to generate pandas code of the given 7 questions, all respective 7 codes output generated in separate jupyter cells.
- - Used 'deepseek-r1-distill-llama-70b' from Groq.
+ - **LLM Used:** `deepseek-r1-distill-llama-70b` from Groq.
  - All the details are available in `llm_queries.ipynb` file.
 
 </br>
@@ -58,8 +58,9 @@ energy_query_app/
     └── query_processor.py
 ```
 
+### Prompt used in `llm_queries.ipynb`
+
 ```
-Prompt used in llm_queries.ipynb:
 You are an expert data analyst using Python pandas.
 
 The dataset is stored at this path on my system:
