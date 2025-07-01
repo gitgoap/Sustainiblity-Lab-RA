@@ -49,13 +49,14 @@ Name: **Aman Prakash**
 ### Repository Structure
 
 ```
-energy_query_app/
+Sustainiblity-Lab-RA/
 ├── app.py
 ├── requirements.txt
 ├── data/
 │   └── energy_data.csv
-└── utils/
-    └── query_processor.py
+├── utils/
+|   └── query_processor.py
+└──llm_queries.ipynb
 ```
 
 ### Prompt used in `llm_queries.ipynb`
