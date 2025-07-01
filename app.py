@@ -90,9 +90,10 @@ def process_user_query(query, df, processor):
     st.subheader("🐍 Generated Pandas Code")
     st.code(generated_code, language='python')
     
-    # Execute the code
+    
     st.subheader("⚡ Execution Results")
     
+    # executes dynamically generated Py. code
     with st.spinner("Executing code..."):
         execution_result = processor.execute_code_safely(generated_code, df)
     
