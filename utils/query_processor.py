@@ -93,7 +93,7 @@ Generate the pandas code (NO IMPORTS):
             }
         }
         
-        # Add plotting capabilities
+        # Add Plotting capabilities
         import matplotlib.pyplot as plt
         import plotly.express as px
         import plotly.graph_objects as go
@@ -110,14 +110,14 @@ Generate the pandas code (NO IMPORTS):
             old_stdout = sys.stdout
             sys.stdout = captured_output = StringIO()
             
-            # Execute the code
+            # execute the code
             exec(code, safe_globals, safe_locals)
             
             # Restore stdout
             sys.stdout = old_stdout
             output = captured_output.getvalue()
             
-            # Get the result
+            # Get the Result
             result = safe_locals.get('result', None)
             
             return {

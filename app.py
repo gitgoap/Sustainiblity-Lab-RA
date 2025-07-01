@@ -81,10 +81,9 @@ def process_user_query(query, df, processor):
     st.subheader("🔄 Processing Your Query")
     
     with st.spinner("Generating pandas code..."):
-        # Get dataset info for the prompt
-        df_info = processor.get_dataset_info(df)
         
-        # Generate pandas code
+        # Most imp. 2 lines-The Core Magic!
+        df_info = processor.get_dataset_info(df)       
         generated_code = processor.generate_pandas_code(query, df_info)
     
     # Display generated code
