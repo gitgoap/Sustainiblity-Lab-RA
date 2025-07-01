@@ -50,7 +50,7 @@ Generate the pandas code (NO IMPORTS):
             # Extract code from response
             code = response.choices[0].message.content.strip()
             
-            # Clean the code (remove markdown if present)
+            #  this removes markdown if present in code )
             if "```python" in code:
                 code = code.split("```python")[1].split("```")[0].strip()
             elif "```" in code:
