@@ -42,7 +42,7 @@ Generate the pandas code (NO IMPORTS):
         try:
             response = self.client.chat.completions.create(
                 messages=[{"role": "user", "content": prompt}],
-                model="deepseek-r1-distill-llama-70b",
+                model="openai/gpt-oss-120b",
                 temperature=0.1,
                 max_tokens=10000
             )
